@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+		{% load static %}
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home</title>
+    <link href="{% static 'iho/css/bootstrap.css' %}" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400" rel="stylesheet">
+	<style>
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#page {
+   min-height:100%;
+   position:relative;
+}
+#content {
+   padding-bottom: 60px;   /* Height of the footer */
+	 padding-top: 0; /* Height of navbar */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+}
+.navbar {
+	font-family: 'Playfair Display', serif;
+	max-width:100%;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+	;
+}
+.navbar-brand {
+	font-family: 'Great Vibes', cursive;
+	font-size: 30px;
+}
+.nav-item > a.active {
+			color: white;
+		}
+	#navspacer {
+		padding-top: 80px;
+	}
+	</style>
+	{% block css %}{% endblock %}
+  </head>
+
+<body>
+<div id="navspacer"></div>
+<div id="page">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Island Home Outfitters</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+						{% if user.is_authenticated %}
+						<li class="nav-item {{ manage_active }}">
+              <a class="nav-link" href="{% url 'manage' %}">Manage</a>
+{#							<a class="nav-link" href="{% url 'logout' %}">Logout</a>#}
+            </li>
+						{% endif %}
+            <li class="nav-item {{ home_active }}">
+              <a class="nav-link" href="{% url 'index' %}">Home</a>
+            </li>
+						<li class="nav-item {{ gallery_active }}">
+							<a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+						</li>
+            <li class="nav-item {{ about_active }}">
+              <a class="nav-link" href="{% url 'about' %}">About</a>
+            </li>
+            <li class="nav-item {{ contact_active }}">
+              <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	<div id="content">
+		{% block content %}{% endblock %}
+	</div>
+    <!-- Footer -->
+	<div id="footer">
+    <footer class="py-4 bg-dark hidden-sm">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Island Home Outfitters 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+	</div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'iho/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'iho/js/bootstrap.bundle.min.js' %}"></script>
+</div>
+  </body>
+
+</html>

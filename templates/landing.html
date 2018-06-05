@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name=”viewport” content=”width=device-width” />
+	<meta charset="UTF-8">
+	<title>Island Home Outfitters</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'iho/css/bootstrap.min.css' %}" />
+	<style>
+		body {
+			background: url('/static/iho/images/landing.jpg') no-repeat center center fixed;
+			height: 100%;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
+	h2 {
+   position: absolute;
+   top: 30vh;
+   left: 49vw;
+   width: 100%;
+   color: black;
+   font: bold 4.8vw 'Great Vibes', cursive;
+   letter-spacing: 0.4vw;
+   padding: 10px;
+		white-space: nowrap;
+	}
+h3 {
+   position: absolute;
+   top: 48vh;
+   left: 60vw;
+   width: 100%;
+   color: black;
+   font: bold 4vw 'Great Vibes', cursive;
+   letter-spacing: 0.4vw;
+   padding: 10px;
+		white-space: nowrap;
+	}
+	a {
+		color: black;
+   position: absolute;
+   top: 65vh;
+   left: 70vw;}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Allura|Great+Vibes|Satisfy" rel="stylesheet">
+</head>
+<body>
+<div id="bg">
+	<h2>Island Home Outfitters</h2>
+	<h3>Rustic Home Decor</h3>
+	<a class="btn btn-outline-dark" href="{% url 'index' %}" role="button">Get Inspired!</a>
+</div>
+</body>
+</html>
