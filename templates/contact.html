@@ -4,8 +4,33 @@
 </style>
 {% endblock css %}
 {% block content %}
-	<div class="container">
-	<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1sYSyGBGViSBcZvlxEYhNCNjMvzooCL7u" width="400" height="400"></iframe>
-	</div>
+<div style="height: 20vh"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <h2>Reminder that times are based on Island Time!</h2>
+            <h5>(Just kidding, its Eastern Standard)</h5> <br>
+        </div>
+    </div>
+    <div class="row">
 
+        <div class="col-md-6 col-sm-12">
+            <div style="text-align: center;">
+            <h2>Hours</h2>
+                <h4>Monday - Friday: 10 AM - 6 PM</h4>
+                <h4>Saturdays: 10 AM - 6 PM</h4>
+            </div>
+            <br>
+            <div style="text-align: left; font-size: 5vh;">
+                <span class="fa fa-phone">  705-377-4433</span> <br>
+                <span class="fa fa-envelope">  islandhomeoutfitters@outlook.com</span> <br>
+                 <span class="fa fa-map-marker">  6130 King St. Mindemoya, Ont.</span>
+            </div>
+            <br>
+        </div>
+        <div class="col-md-6 col-sm-12">
+              <iframe id="map"  src="https://www.google.com/maps/d/u/1/embed?mid=1sYSyGBGViSBcZvlxEYhNCNjMvzooCL7u"></iframe>
+        </div>
+    </div>
+</div>
 {% endblock %}
