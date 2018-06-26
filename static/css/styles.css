@@ -1,0 +1,102 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+	background-color: white;
+}
+#navspacer {
+    padding-top: 12vh;
+}
+.navbar {
+	font-family: 'Playfair Display', serif;
+	max-width:100%;
+	height: 12vh;
+    background-color: #1e488c;
+}
+
+.navbar-brand {
+	font-family: 'Great Vibes', cursive;
+	font-size: 5vh;
+    letter-spacing: 0.2vw;
+    color: white;
+}
+.navbar-brand:hover {
+	color: white;
+}
+
+.nav-link {
+    	color: white;
+}
+.nav-link:hover {
+	color: #4EC5C1;
+}
+.darken {
+	border-radius: 0;
+	min-height: 50vh;
+	width: 100%;
+	height:auto;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('/static/images/pine_background.jpg');
+	background-size: cover;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	color: white;
+	margin: 0;
+	padding: 10vh;
+}
+.splashtext {
+	font-size: 3vw;
+	color: white;
+}
+#island {
+	height: 15vh;
+	width: auto;
+	padding: 0;
+	padding-bottom: 3vh;
+	margin: 0;
+}
+#splashbrand {
+	color: white;
+	font-family: 'Great Vibes', cursive;
+	font-size: 4vw;
+	padding: 0;
+	margin: 0;
+}
+#content {
+   padding-bottom: 10vh;   /* Height of the footer */
+	 padding-top: 0; /* Height of navbar */
+}
+
+#rentals {
+	margin-top: 5vh;
+}
+
+.footer-basic-centered{
+	background-color: #1e488c;
+	width: 100%;
+	height: 10vh;
+	text-align: center;
+}
+
+.footer-basic-centered .footer-company-name{
+	color:  white;
+	font-size: 3vh;
+	font-family: 'Playfair Display', serif;
+	margin: 0;
+	padding: 5vh;
+}
+
+
+@media (max-width: 600px) {
+
+	.footer-basic-centered .footer-company-name{
+		font-size: 12px;
+	}
+}
+
+
