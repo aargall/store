@@ -1,39 +1,58 @@
 {% extends 'base.html' %}
-{% block css %}
-<style>
-</style>
-{% endblock css %}
-{% block content %}
-<<<<<<< HEAD
 
-<div style="height: 20vh"></div>
+{% block content %}
+<div style="background-color: white; padding-top: 3vh;">
+
 <div class="container">
     <div class="row">
-        <div class="col-md-12 col-sm-12">
-            <h2>Reminder that times are based on Island Time!</h2>
-            <h5>(Just kidding, its Eastern Standard)</h5> <br>
-        </div>
-    </div>
-    <div class="row">
-
-        <div class="col-md-6 col-sm-12">
-            <div style="text-align: center;">
-            <h2>Hours</h2>
-                <h4><span>Monday - Friday:</span> 10 AM - 6 PM</h4>
-                <h4><span>Saturdays: </span> 10 AM - 6 PM</h4>
+        <div class="col-xs-12 col-md-12">
+        <h2>All times are in Island Standard Time (IST).</h2>
+        <h5>(Just kidding, it's Eastern Standard.)</h5>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <br>
+                            <h2>Hours</h2>
+                            <hr>
+                            <div style="font-size: 5vh; padding-left: 3vw;">
+                                <h4><span style="font-weight: bold;">Monday - Friday:</span> 10 AM - 6 PM</h4>
+                                <h4><span style="font-weight: bold;">Saturdays: </span> 10 AM - 4 PM</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <h2>Contact Info</h2>
+                            <hr>
+                            <div style="font-size: 5vh; padding-left: 3vw; margin-bottom: 3vh;  ">
+                                <span class="fa fa-phone">  705-377-4433</span> <br>
+                                <span class="fa fa-envelope">  islandhomeoutfitters@outlook.com</span> <br>
+                                <span class="fa fa-map-marker">  6130 King St. Mindemoya, Ont.</span>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <iframe id="map"  src="https://www.google.com/maps/d/u/1/embed?mid=1sYSyGBGViSBcZvlxEYhNCNjMvzooCL7u" style="width:100%; min-height: 70vh; margin-bottom: 5vh;"></iframe>
+                </div>
             </div>
-            <br>
-            <div style="text-align: left; font-size: 5vh;">
-                <span class="fa fa-phone">  705-377-4433</span> <br>
-                <span class="fa fa-envelope">  islandhomeoutfitters@outlook.com</span> <br>
-                 <span class="fa fa-map-marker">  6130 King St. Mindemoya, Ont.</span>
-            </div>
-            <br>
-        </div>
-        <div class="col-md-6 col-sm-12">
-              <iframe id="map"  src="https://www.google.com/maps/d/u/1/embed?mid=1sYSyGBGViSBcZvlxEYhNCNjMvzooCL7u"></iframe>
         </div>
     </div>
 </div>
+</div>
+    {#                </div>#}
+{#            </div>#}
+{#            <div class="row">#}
+{#                 <div class="col-md-12" style="text-align: left; font-size: 5vh;">#}
+
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="col-md-5 col-md-12">#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
 
 {% endblock %}

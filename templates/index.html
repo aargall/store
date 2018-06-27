@@ -6,37 +6,34 @@
 <div class="jumbotron darken">
     <div class="container">
         <h2 class="splashtext">Whether you're a neighbour or just visiting Manitoulin Island,</h2>
-        <h2 class="splashtext">you're style starts here.</h2>
-        <img id="island" src="{% static 'images/island_#7a9fdb.png' %}">
+        <h2 class="splashtext2">you're style starts here.</h2>
+        <img id="island" src="{% static 'images/island_white.png' %}" style="margin-bottom: 5vh;">
 {#        <div style="padding-top: 5vh"></div>#}
-        <h2 class="splashtext">Welcome to <span id="splashbrand">Island Home Outfitters</span></h2>
+        <h2 class="splashtext3">Welcome to   <span id="splashbrand">Island Home Outfitters</span></h2>
 
     </div>
 </div>
-
 <div class="container">
-    <div id="rentals" class="jumbotron">
-        <h2>Looking to rent a watercraft? You're barking up the right tree.</h2>
+<div id="rentals" class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12" style="color: black;">
+                <h2>Looking to rent a watercraft? You're barking up the right tree.</h2>
+                <p style="font-size: 3vh; margin-top: 5vh;">We share a home with Island Adventure Sport Rentals. We have Seadoo, canoe, kayak, and stand-up paddle board (SUP) rentals
+                available with delivery and pickup to the major bodies of water on and around Manitoulin Island.
+                Give us a call today for more information and to book your watercraft.</p>
+                <div style="text-align: center">
+                    <a href="{% url 'contact' %}" class="btn btn-default btn-lg" style="color: white; border-radius: 5px; background-color: #4EC5C1; margin-bottom: 3vh; margin-top: 3vh;">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="/static/images/seadoo_trimmed.png" style="width: 100%; height: auto;">
+            </div>
+        </div>
     </div>
-
 </div>
-    <div id="crp" class="jumbotron">
-        <h2>Your deck and beautfiul outdoor furniture - a match made on Manitoulin. </h2>
-    </div>
-{#<div class="container">#}
-{#    <div class="row">#}
-{#        <div class="col-md-6 col-sm-12">#}
-{#            <div class="row">#}
-{#                <h3>Our store is constantly changing. Keep up to date with the happenings by following us on social media.</h3>#}
-{#            </div>#}
-{#            <div class="row">#}
-{#                <div class="col-12">#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{#        <div class="col-md-6 col-sm-12">#}
-{#            <h3>Instagram</h3>#}
-{#        </div>#}
-{#    </div>#}
+</div>
+{#<div id="crp" class="jumbotron">#}
+{#    <h2>Your deck and beautfiul outdoor furniture - a match made on Manitoulin. </h2>#}
 {#</div>#}
 {% endblock %}
