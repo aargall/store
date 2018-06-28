@@ -1,33 +1,47 @@
 {% extends 'base.html' %}
 
 {% load static %}
-
+{% block css %}
+    <style>
+        .navbar.scrolled {
+        background-color: #1F6F8E;
+         }
+    </style>
+{% endblock css %}
 {% block content %}
+<script>
+    $(function () {
+  $(document).scroll(function () {
+	  var $nav = $(".navbar");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
+});
+</script>
 <div class="jumbotron darken">
     <div class="container">
-        <h2 class="splashtext">Whether you're a neighbour or just visiting Manitoulin Island,</h2>
-        <h2 class="splashtext2">you're style starts here.</h2>
-        <img id="island" src="{% static 'images/island_white.png' %}" style="margin-bottom: 5vh;">
+        <h2 class="splashtext">Whether you're a neighbour or just visiting Manitoulin Island, you're style starts here.</h2>
+        <img id="island" src="{% static 'images/island_white.png' %}">
 {#        <div style="padding-top: 5vh"></div>#}
         <h2 class="splashtext3">Welcome to   <span id="splashbrand">Island Home Outfitters</span></h2>
 
     </div>
 </div>
+{#<div style="height: 5vh; background-color: #1e488c;"></div>#}
 <div class="container">
 <div id="rentals" class="jumbotron">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-12" style="color: black;">
+            <div class="col-md-6 col-sm-12" style="color: #3E444C;">
                 <h2>Looking to rent a watercraft? You're barking up the right tree.</h2>
                 <p style="font-size: 3vh; margin-top: 5vh;">We share a home with Island Adventure Sport Rentals. We have Seadoo, canoe, kayak, and stand-up paddle board (SUP) rentals
                 available with delivery and pickup to the major bodies of water on and around Manitoulin Island.
                 Give us a call today for more information and to book your watercraft.</p>
                 <div style="text-align: center">
-                    <a href="{% url 'contact' %}" class="btn btn-default btn-lg" style="color: white; border-radius: 5px; background-color: #4EC5C1; margin-bottom: 3vh; margin-top: 3vh;">Contact Us</a>
+                    <a href="{% url 'contact' %}" class="btn btn-default btn-lg" style="color: white; border-radius: 5px; background-color: #BF0505; margin-bottom: 3vh; margin-top: 3vh;">Contact Us</a>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
-                <img src="/static/images/seadoo_trimmed.png" style="width: 100%; height: auto;">
+                <img id="seadoo" src="/static/images/seadoo_trimmed.png">
             </div>
         </div>
     </div>
