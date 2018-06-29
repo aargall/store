@@ -3,13 +3,16 @@
 {% load static %}
 {% block css %}
     <style>
+    .navbar {
+        background-color: transparent;
+    }
         .navbar.scrolled {
         background-color: #1F6F8E;
          }
     </style>
 {% endblock css %}
 {% block content %}
-<script>
+    <script>
     $(function () {
   $(document).scroll(function () {
 	  var $nav = $(".navbar");
@@ -31,8 +34,8 @@
 <div id="rentals" class="jumbotron">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-12" style="color: #3E444C;">
-                <h2>Looking to rent a watercraft? You're barking up the right tree.</h2>
+            <div class="col-md-8 col-sm-12" style="color: #3E444C;">
+                <h2><span>Looking to rent a watercraft?</span> <span style="display: block;">You're barking up the right tree.</span></h2>
                 <p style="font-size: 3vh; margin-top: 5vh;">We share a home with Island Adventure Sport Rentals. We have Seadoo, canoe, kayak, and stand-up paddle board (SUP) rentals
                 available with delivery and pickup to the major bodies of water on and around Manitoulin Island.
                 Give us a call today for more information and to book your watercraft.</p>
@@ -40,7 +43,7 @@
                     <a href="{% url 'contact' %}" class="btn btn-default btn-lg" style="color: white; border-radius: 5px; background-color: #BF0505; margin-bottom: 3vh; margin-top: 3vh;">Contact Us</a>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-4 col-sm-12">
                 <img id="seadoo" src="/static/images/seadoo_trimmed.png">
             </div>
         </div>
