@@ -5,3 +5,7 @@
 *.orig
 
 *.xml
+
+iho/__pycache__
+
+store/__pycache__
