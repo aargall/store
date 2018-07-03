@@ -3,7 +3,7 @@ body {
 	margin:0;
 	padding:0;
 	height:100%;
-	background-color: #BDF9F9;
+	background-color: #DAE4E5;
 	font-family: 'Playfair Display', serif;
 	/*background: url("/static/images/textures/paper-texture.jpg") no-repeat fixed;*/
 	/*background-size: cover;*/
@@ -83,6 +83,7 @@ body {
 	height: 22vh;
 	width: auto;
 	padding-bottom: 3vh;
+	margin: auto;
 	margin-top: 6vh;
 	margin-bottom: 6vh;
 }
@@ -133,6 +134,37 @@ body {
 
 	.footer-basic-centered .footer-company-name{
 		font-size: 12px;
+	}
+	.splashtext {
+		font-size: 5vh;
+		color: white;
+		text-shadow: 0.2vh 0.2vh 0.2vh black;
+		display: block;
+	}
+	.splashtext2 {
+		font-size: 4vh;
+		color: white;
+		text-shadow: 0.2vh 0.2vh 0.2vh black;
+		display: block;
+	}
+	.splashtext3 {
+		font-size: 5vh;
+		color: white;
+		text-shadow: 0.2vh 0.2vh 0.2vh black;
+		display: block;
+	}
+	#island {
+		height: 22vh;
+		width: auto;
+		margin: auto;
+	}
+	#splashbrand {
+		color: white;
+		font-family: 'Great Vibes', cursive;
+		font-size: 5vw;
+		margin-left: 1vw;
+		text-shadow: 0.2vw 0.2vw 0.2vw black;
+		-webkit-font-smoothing: subpixel-antialiased; /* or antialiased; */
 	}
 }
 
