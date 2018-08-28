@@ -3,54 +3,173 @@
 {% load static %}
 {% block css %}
     <style>
-    .navbar {
-        background-color: transparent;
-    }
+{#    .navbar {#}
+{#        background-color: transparent;#}
+{#    }#}
         .navbar.scrolled {
-        background-color: #1F6F8E;
+        background-color: #257CAA;
          }
     </style>
-{% endblock css %}
-{% block content %}
-    <script>
-    $(function () {
-  $(document).scroll(function () {
-	  var $nav = $(".navbar");
-	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-	});
-});
-</script>
-<div class="jumbotron darken">
-    <div class="container">
-        <h2 class="splashtext">Whether you're a neighbour or just visiting Manitoulin Island, you're style starts here.</h2>
-        <img id="island" src="{% static 'images/island_white.png' %}">
-{#        <div style="padding-top: 5vh"></div>#}
-        <h2 class="splashtext3">Welcome to   <span id="splashbrand">Island Home Outfitters</span></h2>
 
+{% endblock css %}
+{% block splash %}
+    <div id="splash">
+    <div class="container" style="color: white; text-align: center;">
+        <h1 style="text-align: center;"><span id="lg-splashheader">Welcome to the Island. Welcome Home.</span><span id="sm-splashheader">Welcome to Island Home Outfitters.</span></h1>
+        <br>
+        <p>Than you for stopping by our little piece of the web.</p>
+        <p style="font-weight: bold;">Looking to Order?</p>
+        <p>There is something about seeing and holding something in person before you buy it. We take a lot of pride
+        in our store and we would love for you to visit us. As such, you won't find any shopping carts or order forms here. Take a trip
+        to our Island, our town, and our store - we promise you will love what you see.</p>
     </div>
 </div>
-{#<div style="height: 5vh; background-color: #1e488c;"></div>#}
+{% endblock splash %}
+{% block content %}
+<script>
+{#if ($(window).width() > 768) {#}
+{#    $(function () {#}
+{#        $(document).scroll(function () {#}
+{#            var $nav = $(".navbar");#}
+{#            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());#}
+{#        });#}
+{#    });#}
+{#{ else {#}
+{#    var $nav = $(".navbar");#}
+{#    $nav.toggleClass('scrolled');#}
+{#    $nav.style.background = '#FF00AA'#}
+    $(document).ready(function() {
+        $('#myCarousel').carousel({
+            interval: 10000
+        })
+    });
+</script>
+{#<div class="container" style="margin-top: 10vh;">#}
+{#    <div class="row">#}
+{#        <div class="col-md-8 col-xs-12">#}
+{#            <h3>What's New at IHO: 1/4 Zip Sweaters</h3>#}
+{#            <p></p>#}
+{#        </div>#}
+{#        <div class="col-md-4">#}
+{#            <img src="/static/images/zip_sweaters.jpg" style="width: 100%;">#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+<div class="darken" style="position: relative; text-align: center; color: white;">
+    <div class="centered">
+        <h1>Island Adventure Sports</h1>
+    </div>
+</div>
+
+
 <div class="container">
-<div id="rentals" class="jumbotron">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-sm-12" style="color: #3E444C;">
-                <h2><span>Looking to rent a watercraft?</span> <span style="display: block;">You're barking up the right tree.</span></h2>
-                <p style="font-size: 3vh; margin-top: 5vh;">We share a home with Island Adventure Sport Rentals. We have Seadoo, canoe, kayak, and stand-up paddle board (SUP) rentals
-                available with delivery and pickup to the major bodies of water on and around Manitoulin Island.
-                Give us a call today for more information and to book your watercraft.</p>
-                <div style="text-align: center">
-                    <a href="{% url 'contact' %}" class="btn btn-default btn-lg" style="color: white; border-radius: 5px; background-color: #BF0505; margin-bottom: 3vh; margin-top: 3vh;">Contact Us</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <img id="seadoo" src="/static/images/seadoo_trimmed.png">
+    <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <p>Our store is the home base of Island Adventure Sports, your source for fun on the water on Manitoulin Island. Offering Seadoo, kayak, canoe, and stand-up paddle board (SUP) rentals with delivery accross the Island.
+            Below is a quick summary of rental prices, please give us a call for more details and to book your rental today!</p>
+            <hr>
+{#            <div style="text-align: center;">#}
+{#                <a id="lg-contact-button"  class="btn btn-outline-primary " href="#" role="button">Link</a>#}
+{#                <div id="sm-contact-button" style="text-align: center">#}
+{#                    <a onclick="overlayToggle()" class="btn btn-outline-primary" style="color: white; border-radius: 5px; background-color: #BF0505; margin-bottom: 3vh; margin-top: 3vh;">Contact Us</a>#}
+{#                </div>#}
+{#            </div>#}
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <div style="text-align: center;">
+                <table style="width:100%; margin: auto; text-align: center;">
+                  <tr>
+                    <th colspan="2"><h4>Seadoos</h4></th>
+                  </tr>
+                    <tr>
+                        <td>4 Hours<br>(Lake Mindemoya Only)</td>
+                        <td>$199</td>
+                    </tr>
+                    <tr>
+                        <td>8 Hours</td>
+                        <td>$275</td>
+                    </tr>
+                    <tr>
+                        <td>Add A Day</td>
+                        <td>$175</td>
+                    </tr>
+                    <tr>
+                        <td>5 Days</td>
+                        <td>$929</td>
+                    </tr>
+                    <tr>
+                        <td>Weekly</td>
+                        <td>$1,100</td>
+                    </tr>
+                  <tr>
+                    <tr>
+                 <th colspan="2"><h4>Paddle Boards & Kayaks</h4></th>
+                  </tr>
+                    <tr>
+                        <td>Daily</td>
+                        <td>$45</td>
+                    </tr>
+                    <tr>
+                        <td>Weekly</td>
+                        <td>$199</td>
+                    </tr>
+                    <tr>
+
+                    <th colspan="2"><h4>Canoe and Tandem Kayaks</h4></th>
+                  </tr>
+                    <tr>
+                        <td>Daily</td>
+                        <td>$55</td>
+                    </tr>
+                    <tr>
+                        <td>Weekly</td>
+                        <td>$244</td>
+                    </tr>
+                </table>
+                <hr>
+                <p style="font-size: small;">*Prices listed above do not include applicable taxes or delivery and are subject to change without notice. Island Adventure Sports does not guarantee the accuracy of these prices and they must be confirmed during the booking process.</p>
             </div>
         </div>
     </div>
 </div>
+<div id="crpsplash" style="position: relative; text-align: center; color: white;">
+{#    <img src="/static/images/lander_1600x500.jpg" style="max-width:100%;">#}
+    <div class="centered">
+        <h1>CRP Furniture</h1>
+    </div>
 </div>
-{#<div id="crp" class="jumbotron">#}
-{#    <h2>Your deck and beautfiul outdoor furniture - a match made on Manitoulin. </h2>#}
-{#</div>#}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-sm-12" style="color: #3E444C;">
+            <p style="margin-top: 5vh;">We love supporting local here at IHO and when it comes to high quality
+                outdoor furniture manufactured here in Ontario, nobody does it better than CR Plastics. We are a regional CRP dealer,
+            with every product in every color available for purchase, order, assembly, and delivery.</p>
+            <p>When you're on Island time the last thing you want to be doing is maintenance. Made of 100% recycled material and all stainless-steel hardware,
+            you will spend more time relaxing in your furniture instead of taking care of it.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="lg-contact-button">
+                <a href="{% url 'contact' %}" class="btn btn-default btn-lg btn-block">Contact Us</a>
+            </div>
+            <div class="sm-contact-button">
+                <a onclick="overlayToggle()" class="btn btn-default btn-lg">Contact Us</a>
+            </div>
+             <div class="lg-contact-button">
+                <a href="https://crpproducts.com/" class="btn btn-default btn-lg btn-block">Visit CRP</a>
+            </div>
+            <div class="sm-contact-button">
+                <a href="https://crpproducts.com/" class="btn btn-default btn-lg">Visit CRP</a>
+            </div>
+             <div class="lg-contact-button">
+                <a href="https://www.crpproducts.com/docs/CRP_Warranty.pdf" class="btn btn-default btn-lg btn-block">Warranty Information</a>
+            </div>
+            <div class="sm-contact-button">
+                <a href="https://www.crpproducts.com/docs/CRP_Warranty.pdf" class="btn btn-default btn-lg">Warranty Information</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 {% endblock %}
