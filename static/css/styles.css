@@ -162,17 +162,6 @@ body {
 .sm-contact-button {
 	display: none;
 }
-.card-title {
-	font-family: Cookie, cursive;
-	font-size: 4vw;
-}
-
-.product-card {
-	border: none;
-	background-color: #257CAA;
-	color: white;
-	margin: 0.5vw;
-}
 
 #lg-splashheader {
 	display: block;
@@ -181,6 +170,45 @@ body {
 	display: none;
 }
 
+#storesplash {
+	position: relative;
+	text-align: center;
+	color: white;
+	border-radius: 5px;
+	min-height: 50vh;
+	width: 100%;
+	height: auto;
+  	background-image:
+	linear-gradient(
+	  rgba(0, 0, 0, 0.5),
+	  rgba(0, 0, 0, 0.5)
+	),
+	url('/static/images/iho_storesplash.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: 5vh auto;
+}
+.social-icons{
+	margin:auto;
+}
+.social-icons a {
+	display: inline-block;
+	margin: auto 1vw;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+}
+
+.card {
+	border: none;
+}
 @media (max-width: 600px) {
 	.navbar {
 		background-color: #257CAA;
@@ -276,7 +304,6 @@ body {
 		text-align: center;
 		width: 60vw;
 		display: block;
-		color: white;
 		border-radius: 5px;
 		background-color: #BF0505;
 		margin: 3vh auto 3vh auto;
@@ -350,7 +377,7 @@ body {
 /* Icon 3 */
 
 #nav-icon3 span:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
@@ -609,4 +636,18 @@ background: #333333;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#contactinfo {
+	margin-bottom: 0;
+	color: black;
+}
+
+.contact-links i {
+	display: inline-block;
+	margin-right: 1vw;
+}
+
+.contact-links p {
+	display: inline-block;
 }
