@@ -76,16 +76,16 @@ function overlayToggle() {
                   <span></span>
               </div>
     </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item {{ home_active }}">
-          <a class="nav-link" href="{% url 'index' %}">Home</a>
-        </li>
-        <li class="nav-item {{ contact_active }}">
-          <a class="nav-link" href="{% url 'contact' %}">Contact & Location</a>
-        </li>
-      </ul>
-    </div>
+{#    <div class="collapse navbar-collapse" id="navbarResponsive">#}
+{#      <ul class="navbar-nav ml-auto">#}
+{#          <li class="nav-item {{ home_active }}">#}
+{#          <a class="nav-link" href="{% url 'index' %}">Home</a>#}
+{#        </li>#}
+{#        <li class="nav-item {{ contact_active }}">#}
+{#          <a class="nav-link" href="{% url 'contact' %}">Contact & Location</a>#}
+{#        </li>#}
+{#      </ul>#}
+{#    </div>#}
   </div>
 </nav>
 </div>
@@ -142,7 +142,7 @@ function overlayToggle() {
        function updateDivsMargins() {
            $('#splash-container').each(function () {
                $(this).css({
-                   'margin-top': $("#mainNav").height()
+                   'margin-top': $("#mainNav").height()+20
                });
 {#               $(this).css({#}
 {#                   'margin-bottom': 10 + $(".footer-basic-centered").height()#}
@@ -150,6 +150,28 @@ function overlayToggle() {
            });
         }
      });
+    scrollingElement = (document.scrollingElement || document.body)
+function scrollToBottom () {
+   scrollingElement.scrollTop = scrollingElement.scrollHeight;
+}
+
+function scrollToTop (id) {
+   scrollingElement.scrollTop = 0;
+}
+
+//Require jQuery
+function scrollSmoothToBottom (id) {
+   $(scrollingElement).animate({
+      scrollTop: document.body.scrollHeight
+   }, 500);
+}
+
+//Require jQuery
+function scrollSmoothToTop (id) {
+   $(scrollingElement).animate({
+      scrollTop: 0
+   }, 500);
+}
 </script>
 </body>
 </html>

@@ -13,20 +13,20 @@
 
 {% endblock css %}
 {% block splash %}
-    <div id="splash">
-    <div class="container" style="color: white; text-align: center;">
-        <h1 style="text-align: center;"><span id="lg-splashheader">Welcome to the Island. Welcome Home.</span><span id="sm-splashheader">Welcome to Island Home Outfitters.</span></h1>
-        <br>
-        <p>Than you for stopping by our little piece of the web.</p>
-        <p style="font-weight: bold;">Looking to Order?</p>
-        <p>There is something about seeing and holding something in person before you buy it. We take a lot of pride
-        in our store and we would love for you to visit us. As such, you won't find any shopping carts or order forms here. Take a trip
-        to our Island, our town, and our store - we promise you will love what you see.</p>
-    </div>
-</div>
+{#    <div id="splash">#}
+{#    <div class="container" style="color: white; text-align: center;">#}
+{#        <h1 style="text-align: center;"><span id="lg-splashheader">Welcome to the Island. Welcome Home.</span><span id="sm-splashheader">Welcome to Island Home Outfitters.</span></h1>#}
+{#        <br>#}
+{#        <p>Than you for stopping by our little piece of the web.</p>#}
+{#        <p style="font-weight: bold;">Looking to Order?</p>#}
+{#        <p>There is something about seeing and holding something in person before you buy it. We take a lot of pride#}
+{#        in our store and we would love for you to visit us. As such, you won't find any shopping carts or order forms here. Take a trip#}
+{#        to our Island, our town, and our store - we promise you will love what you see.</p>#}
+{#    </div>#}
+{#</div>#}
 {% endblock splash %}
 {% block content %}
-<script>
+{#<script>#}
 {#if ($(window).width() > 768) {#}
 {#    $(function () {#}
 {#        $(document).scroll(function () {#}
@@ -38,23 +38,96 @@
 {#    var $nav = $(".navbar");#}
 {#    $nav.toggleClass('scrolled');#}
 {#    $nav.style.background = '#FF00AA'#}
-    $(document).ready(function() {
-        $('#myCarousel').carousel({
-            interval: 10000
-        })
-    });
-</script>
-{#<div class="container" style="margin-top: 10vh;">#}
-{#    <div class="row">#}
-{#        <div class="col-md-8 col-xs-12">#}
-{#            <h3>What's New at IHO: 1/4 Zip Sweaters</h3>#}
-{#            <p></p>#}
-{#        </div>#}
-{#        <div class="col-md-4">#}
-{#            <img src="/static/images/zip_sweaters.jpg" style="width: 100%;">#}
-{#        </div>#}
-{#    </div>#}
-{#</div>#}
+{#</script>#}
+{#    #}
+<div id="storesplash" >
+    <div class="centered">
+        <h1>Our Store</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Store Hours (Summer)</h5>
+                    <hr style="border-color: #257CAA;">
+                    <table style="margin: 3vh auto; border-collapse: separate; border-spacing: 2px; text-align: right;">
+                        <tr>
+                            <td>Monday to Friday: </td>
+                            <td>10 AM - 6 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday:</td>
+                            <td>10 AM - 4 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday:</td>
+                            <td>11 AM - 3 PM</td>
+                        </tr>
+                    </table>
+                    <p>As we leave Summer behind and enter Septemeber our hours will vary from week to week. For the current week's hours please give us a call. We really appreciate your understanding.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Let's Get Social</h5>
+                    <hr style="border-color: #257CAA;">
+                    <p class="card-text">The easiest way to stay up to date on the happenings at Island Home Outfitters is
+                    to follow us on social media. We post about events, new products, and when fresh shipments of old favourites arrive.</p>
+                    <div style="text-align: center;">
+                       <div class="social-icons">
+                            <a href="https://www.facebook.com/islandhomeoutfitters/"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/islandhomeoutfitters/?hl=en"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Looking to Order?</h5>
+                    <hr style="border-color: #257CAA;">
+                    <p class="card-text">There is something about seeing and holding something in person before you buy it. We take a lot of pride
+                    in our store and we would love for you to visit us. As such, you won't find any shopping carts or order forms here. Take a trip
+                    to our Island, our town, and our store - we promise you will love what you see.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ <div class="row">
+        <div class="col-md-5 col-xs-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Digits and Directions</h5>
+                    <hr style="border-color: #257CAA;">
+                    <div id="contactinfo">
+                        <div class="contact-links">
+                            <i class="fa fa-map-marker"></i>
+                            <p><span>6130 King St.</span> Mindemoya, Ontario</p>
+                        </div>
+                        <div class="contact-links">
+                            <i class="fa fa-phone"></i>
+                            <p>(705) 377 4433</p>
+                        </div>
+                        <div class="contact-links">
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:islandhomeoutfitters@outlook.com" style="color: black;">islandhomeoutfitters@outlook.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 col-xs-12">
+            <iframe id="map"  src="https://www.google.com/maps/d/u/1/embed?mid=1sYSyGBGViSBcZvlxEYhNCNjMvzooCL7u" style="width:100%; min-height: 50vh;"></iframe>
+        </div>
+    </div>
+</div>
+
 <div class="darken" style="position: relative; text-align: center; color: white;">
     <div class="centered">
         <h1>Island Adventure Sports</h1>
@@ -67,19 +140,23 @@
         <div class="col-md-6 col-xs-12">
             <p>Our store is the home base of Island Adventure Sports, your source for fun on the water on Manitoulin Island. Offering Seadoo, kayak, canoe, and stand-up paddle board (SUP) rentals with delivery accross the Island.
             Below is a quick summary of rental prices, please give us a call for more details and to book your rental today!</p>
-            <hr>
 {#            <div style="text-align: center;">#}
-{#                <a id="lg-contact-button"  class="btn btn-outline-primary " href="#" role="button">Link</a>#}
-{#                <div id="sm-contact-button" style="text-align: center">#}
-{#                    <a onclick="overlayToggle()" class="btn btn-outline-primary" style="color: white; border-radius: 5px; background-color: #BF0505; margin-bottom: 3vh; margin-top: 3vh;">Contact Us</a>#}
-{#                </div>#}
+{#                <a class="btn btn-outline-primary " href="#" role="button">Contact Us</a>#}
 {#            </div>#}
+            <div class="sm-contact-button">
+                <a onclick="overlayToggle()" class="btn btn-default btn-lg">Contact Us</a>
+            </div>
+            <hr style="border-color: #257CAA;">
+            <p>Enjoy your rental so much you may like to own a watercraft? We are a Red Paddle inflatable SUP dealer,
+            so you can buy or order many of the exact same boards that make up our rental fleet. Kayaks, tubes, water skis and more, we've got your fun
+            at that lake covered. We will miss having you rent from us,
+            but we know you'll love all the time you'll spend on the water owning your own equipment.</p>
         </div>
         <div class="col-md-6 col-xs-12">
             <div style="text-align: center;">
-                <table style="width:100%; margin: auto; text-align: center;">
+                <table style="width:100%; margin: auto; text-align: center; padding: 5px;">
                   <tr>
-                    <th colspan="2"><h4>Seadoos</h4></th>
+                    <th colspan="2"><h5>Seadoos</h5></th>
                   </tr>
                     <tr>
                         <td>4 Hours<br>(Lake Mindemoya Only)</td>
@@ -103,7 +180,7 @@
                     </tr>
                   <tr>
                     <tr>
-                 <th colspan="2"><h4>Paddle Boards & Kayaks</h4></th>
+                 <th colspan="2"><h5>Paddle Boards & Kayaks</h5></th>
                   </tr>
                     <tr>
                         <td>Daily</td>
@@ -113,9 +190,8 @@
                         <td>Weekly</td>
                         <td>$199</td>
                     </tr>
-                    <tr>
-
-                    <th colspan="2"><h4>Canoe and Tandem Kayaks</h4></th>
+                        <tr>
+                    <th colspan="2"><h5>Canoe and Tandem Kayaks</h5></th>
                   </tr>
                     <tr>
                         <td>Daily</td>
@@ -126,7 +202,7 @@
                         <td>$244</td>
                     </tr>
                 </table>
-                <hr>
+            <hr style="border-color: #257CAA;">
                 <p style="font-size: small;">*Prices listed above do not include applicable taxes or delivery and are subject to change without notice. Island Adventure Sports does not guarantee the accuracy of these prices and they must be confirmed during the booking process.</p>
             </div>
         </div>
@@ -150,7 +226,7 @@
         </div>
         <div class="col-md-4">
             <div class="lg-contact-button">
-                <a href="{% url 'contact' %}" class="btn btn-default btn-lg btn-block">Contact Us</a>
+                <a href="#" onClick="scrollSmoothToBottom()" class="btn btn-default btn-lg btn-block">Contact Us</a>
             </div>
             <div class="sm-contact-button">
                 <a onclick="overlayToggle()" class="btn btn-default btn-lg">Contact Us</a>
