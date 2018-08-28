@@ -152,7 +152,7 @@ body {
 	/*max-width: 20vw;*/
 	/*background: none;*/
 	outline: 1px #257CAA solid;
-	color: #BF0505;
+	color: #257CAA;
 	margin-bottom: 3vh;
 	margin-top: 3vh;
 	box-shadow: 1px 2px 0 0 #007299;
@@ -209,6 +209,7 @@ body {
 .card {
 	border: none;
 }
+
 @media (max-width: 600px) {
 	.navbar {
 		background-color: #257CAA;
@@ -305,7 +306,7 @@ body {
 		width: 60vw;
 		display: block;
 		border-radius: 5px;
-		background-color: #BF0505;
+		background-color: #257CAA;
 		margin: 3vh auto 3vh auto;
 	}
 	.sm-contact-button a {
@@ -316,6 +317,12 @@ body {
 	}
 	.footer-center, .footer-right, .footer-left{
 		width: 90vw;
+	}
+	#digits {
+		display: none;
+	}
+	#map {
+		display: none;
 	}
 }
 
@@ -632,6 +639,7 @@ background: #333333;
 }
 
 .centered {
+	width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
