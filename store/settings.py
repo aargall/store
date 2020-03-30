@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'pe$*r=5k1qk#5c4t0uu3$(r%154gbo_b4asuzja0kr$%*5vudu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['138.197.138.180','.islandhomeoutfitters.ca', '127.0.0.1']
+ALLOWED_HOSTS = ['138.197.138.180','.islandhomeoutfitters.ca']
 
 
 # Application definition
