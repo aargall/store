@@ -66,7 +66,7 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
-	#mobiletoggle {
+	.mobiletoggle {
 		display: none;
 	}
 
@@ -170,6 +170,13 @@ body {
 	display: none;
 }
 
+#lg-pandemicheader {
+	display: block;
+}
+#sm-pandemicheader {
+	display: none;
+}
+
 #storesplash {
 	position: relative;
 	text-align: center;
@@ -188,6 +195,41 @@ body {
 	background-position: center;
 	background-size: cover;
 	margin: 5vh auto;
+}
+
+#pandemicmessage {
+	position: relative;
+	text-align: left;
+	color: black;
+	border-radius: 5px;
+	min-height: 50vh;
+	width: 100%;
+	height: auto;
+	margin: 20vh auto;
+}
+#pandemicheader {
+	font-size: 8vh;
+	width: 100%;
+    position: relative;
+	text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#lg-pandemicheader {
+	font-size: 8vh;
+	width: 100%;
+    position: relative;
+	text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.closedsign{
+	position: relative;
+	style="width:70%;
+	height:auto;
 }
 .social-icons{
 	margin:auto;
@@ -246,6 +288,17 @@ body {
 	.sm-splashheader {
 		display: block;
 	}
+
+	#lg-pandemicheader {
+		display: none;
+	}
+	#sm-pandemicheader {
+		display: block;
+	}
+	.closedsign{
+		display: none;
+	}
+
 	.overlay {
 		height: 0;
 		width: 100%;

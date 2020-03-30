@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, render_to_response
+from django.shortcuts import render, redirect
 from .models import Book, Author, BookInstance, Genre
 from django.conf import settings
 import os
@@ -24,7 +24,7 @@ def about(request):
 def gallery(request):
     path="C:\dev\store\media\iho"
     img_list = os.listdir(path)
-    return render_to_response('gallery.html', {'images': img_list}, {"gallery_active": "active"})
+    return render('gallery.html', {'images': img_list}, {"gallery_active": "active"})
 
 
 def contact(request):
@@ -62,4 +62,3 @@ def model_form_upload(request):
         'simple_upload.html',
         context={'form': form, "manage_active": "active"}
     )
-
