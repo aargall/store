@@ -22,10 +22,10 @@ body {
 }
 
 .navbar-brand {
-	font-family: 'Cookie', cursive;
-	/*font-family: 'Playfair Display', serif;*/
-	font-size: 5vh;
-    letter-spacing: 0.2vw;
+	/* font-family: 'Cookie', cursive; */
+	font-family: 'Playfair Display', serif;
+	font-size: 4vh;
+    letter-spacing: 0.1vw;
     color: white;
 	padding-top: 1vh;
 	/*text-shadow: 0.1vh 0.1vh 0.1vh black;*/
@@ -205,7 +205,7 @@ body {
 	min-height: 50vh;
 	width: 100%;
 	height: auto;
-	margin: 20vh auto;
+	margin: 20vh 5vh auto;
 }
 #pandemicheader {
 	font-size: 8vh;
@@ -640,6 +640,16 @@ body {
 
 	.footer-distributed .footer-center i{
 		margin-left: 0;
+	}
+	#pandemicmessage {
+		position: relative;
+		text-align: left;
+		color: black;
+		border-radius: 5px;
+		min-height: 50vh;
+		width: 100%;
+		height: auto;
+		margin: 15vh 5vh auto;
 	}
 
 }
