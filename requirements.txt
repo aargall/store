@@ -1,4 +1,4 @@
-Django==2.0.6
+Django==2.2.24
 gunicorn==19.8.1
 meld3==1.0.2
 # psycopg2==2.7.4
